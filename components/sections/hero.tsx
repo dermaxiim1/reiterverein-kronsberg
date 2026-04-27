@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative min-h-screen overflow-hidden bg-ink">
       <Image
         src="/images/hero/anlage.jpg"
-        alt="Reiter und Pferd im Springparcours — Vielseitigkeitsreiterei beim RVK"
+        alt="Pferd in der Natur — Wildpferde im Münsterland"
         fill
         priority
         sizes="100vw"
