@@ -11,7 +11,7 @@ export const SITE = {
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : "https://reitanlage-muenkel.vercel.app"),
+      : "https://reiterverein-kronsberg.vercel.app"),
   description:
     "Reiterverein Kronsberg e.V. — seit über 70 Jahren in Hannover-Laatzen, direkt an der Leinemasch. Reitunterricht auf vereinseigenen Schulpferden, Voltigieren ab 6 Jahren, 23 Innen- und Außenboxen für Einsteller.",
   owner: "Stephanie Nevado Navarro · 1. Vorsitzende",
