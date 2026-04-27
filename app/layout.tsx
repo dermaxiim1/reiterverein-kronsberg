@@ -70,8 +70,14 @@ export default function RootLayout({
   return (
     <html lang="de" className={`${fraunces.variable} ${sourceSans.variable}`}>
       <body className="min-h-screen bg-paper text-ink antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-ink focus:px-4 focus:py-2 focus:text-cream focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-forest"
+        >
+          Zum Hauptinhalt springen
+        </a>
         <SiteHeader />
-        {children}
+        <div id="main">{children}</div>
         <SiteFooter />
       </body>
     </html>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -26,13 +27,14 @@ export function GalleryGrid({ images }: { images: readonly GalleryImage[] }) {
               "group relative overflow-hidden rounded-sm bg-paper-dark transition-transform duration-500 hover:scale-[1.02] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-forest",
               img.className,
             )}
-            style={{
-              backgroundImage: `url(${img.src})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
           >
-            <span className="sr-only">{img.alt}</span>
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+            />
           </button>
         ))}
       </div>

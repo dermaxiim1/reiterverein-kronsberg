@@ -1,22 +1,22 @@
+import Image from "next/image";
+
 import { StampBadge } from "@/components/ui/stamp-badge";
 import { SITE } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      <div
-        className="absolute inset-0 bg-ink"
-        style={{
-          backgroundImage:
-            "url(/images/hero/anlage.jpg), linear-gradient(135deg, var(--forest-deep), var(--ink))",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        aria-hidden
+    <section className="relative min-h-screen overflow-hidden bg-ink">
+      <Image
+        src="/images/hero/anlage.jpg"
+        alt="Reitanlage Münkel — Reithalle in Vielseitigkeit"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-b from-ink/30 via-ink/40 to-ink/85"
+        className="absolute inset-0 bg-gradient-to-b from-ink/30 via-ink/45 to-ink/85"
       />
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] flex-col justify-end px-6 pb-24 pt-40 lg:px-14 lg:pb-32 lg:pt-48">
@@ -43,13 +43,13 @@ export function Hero() {
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <a
             href={`tel:${SITE.contact.phoneTel}`}
-            className="inline-flex items-center gap-2 rounded-full bg-cream px-7 py-4 text-sm font-medium tracking-wider text-ink transition-all hover:-translate-y-0.5 hover:bg-hay"
+            className="inline-flex items-center gap-2 rounded-full bg-cream px-7 py-4 text-sm font-medium tracking-wider text-ink transition-all hover:-translate-y-0.5 hover:bg-hay focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream"
           >
             {SITE.contact.phone} <span aria-hidden>→</span>
           </a>
           <a
             href={`mailto:${SITE.contact.email}`}
-            className="inline-flex items-center gap-2 rounded-full border border-cream/40 px-7 py-4 text-sm font-medium tracking-wider text-cream transition-all hover:-translate-y-0.5 hover:bg-cream/10"
+            className="inline-flex items-center gap-2 rounded-full border border-cream/40 px-7 py-4 text-sm font-medium tracking-wider text-cream transition-all hover:-translate-y-0.5 hover:bg-cream/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream"
           >
             E-Mail schreiben
           </a>
