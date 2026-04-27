@@ -18,7 +18,7 @@ export const HORSES: Horse[] = [
     discipline: "Schulbetrieb · Volti-Hoffnung",
     story:
       "Q7 gehört zu den Größten in unserer Schulpferderiege. Frisch zum Jahresstart bei uns — wir wünschen ihm und uns viele schöne gemeinsame Momente.",
-    image: "/images/horses/lou.jpg",
+    image: "/images/horses/q7.jpg",
   },
   {
     id: "inka",
@@ -28,7 +28,7 @@ export const HORSES: Horse[] = [
     discipline: "Schul- & Voltipferd",
     story:
       "Seit knapp drei Jahren im Schulbetrieb. Wächst in ihre Rolle als Voltipferd hinein — ruhig, gelassen, mit dem nötigen Dickkopf.",
-    image: "/images/horses/cara.jpg",
+    image: "/images/horses/inka.jpg",
   },
   {
     id: "nevado",
@@ -38,7 +38,7 @@ export const HORSES: Horse[] = [
     discipline: "Fortgeschrittene · Longe",
     story:
       "Hat im Verein ein neues Zuhause gefunden. Wird besonders mit fortgeschrittenen Reitern und an der Longe eingesetzt.",
-    image: "/images/horses/wotan.jpg",
+    image: "/images/horses/nevado.jpg",
   },
   {
     id: "polly",
@@ -47,7 +47,7 @@ export const HORSES: Horse[] = [
     discipline: "Reit- & Voltistunden",
     story:
       "Bringt Erfahrung mit kleineren und jüngeren Reitschüler:innen mit. Hat in Pebbles eine gute Schulpony-Freundin gefunden — geduldig auch in den Voltistunden.",
-    image: "/images/horses/diva.jpg",
+    image: "/images/horses/polly.jpg",
   },
   {
     id: "pebbles",
@@ -56,7 +56,7 @@ export const HORSES: Horse[] = [
     discipline: "Reitstunden Anfänger",
     story:
       "Fleißiges Pony in Schritt und Trab — möchte alles richtig machen. Bequeme Gangarten und freundliches Wesen, beliebt bei Klein und Groß.",
-    image: "/images/horses/falke.jpg",
+    image: "/images/horses/pebbles.jpg",
   },
   {
     id: "bramble",
@@ -66,6 +66,6 @@ export const HORSES: Horse[] = [
     discipline: "Nachwuchs · in Ausbildung",
     story:
       "Als 3,5-Jähriger zu uns gekommen. Im Umgang ein Schatz, besonnen und freundlich. Lernt jetzt langsam die Atmosphäre des Schulpferdeunterrichts kennen.",
-    image: "/images/horses/lara.jpg",
+    image: "/images/horses/bramble.jpg",
   },
 ];
