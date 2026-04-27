@@ -39,9 +39,9 @@ export const SITE = {
   nav: [
     { href: "#ueber-uns", label: "Über uns" },
     { href: "#anlagen", label: "Anlagen" },
-    { href: "#pension", label: "Pension" },
+    { href: "#pferde", label: "Pferde" },
     { href: "#vielseitigkeit", label: "Vielseitigkeit" },
-    { href: "#galerie", label: "Galerie" },
+    { href: "#veranstaltungen", label: "Termine" },
     { href: "#kontakt", label: "Kontakt" },
   ] as const,
 } as const;

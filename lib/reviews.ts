@@ -10,7 +10,7 @@ export const REVIEWS: Review[] = [
     text:
       "Wir sind seit elf Jahren hier. Wenn etwas mit unserem Pferd ist, weiß Marc es vor uns. Diese Aufmerksamkeit findet man nicht überall.",
     author: "Anke L.",
-    detail: "Einstellerin · Pferd „Cara"",
+    detail: "Einstellerin · Pferd Cara",
   },
   {
     text:
