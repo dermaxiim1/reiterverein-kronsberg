@@ -6,14 +6,16 @@ import { SITE } from "@/lib/site";
 export function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-ink">
-      <Image
-        src="/images/hero/anlage.jpg"
-        alt="Pferd galoppiert auf der Koppel im Abendlicht"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
+      <div className="absolute inset-0 motion-safe:animate-hero-zoom">
+        <Image
+          src="/images/hero/anlage.jpg"
+          alt="Pferd galoppiert auf der Koppel im Abendlicht"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
       <div
         aria-hidden
         className="absolute inset-0 bg-gradient-to-b from-ink/30 via-ink/45 to-ink/85"
@@ -71,6 +73,19 @@ export function Hero() {
         small={`Reiterverein · seit ${SITE.founded}`}
         className="absolute right-6 top-28 z-10 size-32 rotate-[8deg] md:right-14 md:top-32 md:size-36"
       />
+
+      {/* Scroll indicator */}
+      <a
+        href="#verein"
+        aria-label="Zum Verein scrollen"
+        className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 text-cream/70 transition-colors hover:text-cream md:flex"
+      >
+        <span className="text-[10px] uppercase tracking-[0.22em]">Mehr erfahren</span>
+        <span
+          aria-hidden
+          className="block h-10 w-px bg-cream/50 motion-safe:animate-scroll-hint"
+        />
+      </a>
     </section>
   );
 }
