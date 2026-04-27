@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative min-h-screen overflow-hidden bg-ink">
       <Image
         src="/images/hero/anlage.jpg"
-        alt="Reiterverein Kronsberg — Reithalle 43 × 20 m"
+        alt="Reiter und Pferd im Springparcours — Vielseitigkeitsreiterei beim RVK"
         fill
         priority
         sizes="100vw"
