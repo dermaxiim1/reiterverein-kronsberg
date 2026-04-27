@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative min-h-screen overflow-hidden bg-ink">
       <Image
         src="/images/hero/anlage.jpg"
-        alt="Pferd in der Natur — Wildpferde im Münsterland"
+        alt="Pferd galoppiert auf der Koppel im Abendlicht"
         fill
         priority
         sizes="100vw"
