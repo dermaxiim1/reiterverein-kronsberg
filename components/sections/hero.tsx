@@ -1,9 +1,9 @@
+import { StampBadge } from "@/components/ui/stamp-badge";
 import { SITE } from "@/lib/site";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Background image — placeholder; finale Foto später nach /public/images/hero/ */}
       <div
         className="absolute inset-0 bg-ink"
         style={{
@@ -14,10 +14,9 @@ export function Hero() {
         }}
         aria-hidden
       />
-      {/* Gradient overlay */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-b from-ink/30 via-ink/40 to-ink/80"
+        className="absolute inset-0 bg-gradient-to-b from-ink/30 via-ink/40 to-ink/85"
       />
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] flex-col justify-end px-6 pb-24 pt-40 lg:px-14 lg:pb-32 lg:pt-48">
@@ -66,6 +65,12 @@ export function Hero() {
           <span>{SITE.address.street}, {SITE.address.city}</span>
         </div>
       </div>
+
+      <StampBadge
+        big="Münkel"
+        small="Pensionsstall · Hannover"
+        className="absolute right-6 top-28 z-10 size-32 rotate-[8deg] md:right-14 md:top-32 md:size-36"
+      />
     </section>
   );
 }

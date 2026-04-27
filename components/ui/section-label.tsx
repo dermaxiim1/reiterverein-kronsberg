@@ -14,7 +14,9 @@ export function SectionLabel({
         className,
       )}
     >
-      <span aria-hidden>—</span>
+      <span aria-hidden className="font-serif text-base italic">
+        ✦
+      </span>
       {children}
     </div>
   );
