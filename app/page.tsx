@@ -5,6 +5,7 @@ import { FacilitiesSection } from "@/components/sections/facilities-section";
 import { GallerySection } from "@/components/sections/gallery-section";
 import { Hero } from "@/components/sections/hero";
 import { HorsesSection } from "@/components/sections/horses-section";
+import { MembershipSection } from "@/components/sections/membership-section";
 import { PensionSection } from "@/components/sections/pension-section";
 import { ReviewsSection } from "@/components/sections/reviews-section";
 import { TeamSection } from "@/components/sections/team-section";
@@ -18,10 +19,11 @@ export default function HomePage() {
       <About />
       <FacilitiesSection />
       <PensionSection />
-      <TeamSection />
       <HorsesSection />
       <VielseitigkeitSection />
+      <MembershipSection />
       <EventsSection />
+      <TeamSection />
       <ReviewsSection />
       <GallerySection />
       <ContactSection />

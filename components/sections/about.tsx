@@ -5,52 +5,53 @@ import { SectionLabel } from "@/components/ui/section-label";
 export function About() {
   return (
     <section
-      id="ueber-uns"
+      id="verein"
       className="bg-paper-dark px-6 py-24 lg:px-14 lg:py-32"
     >
       <div className="mx-auto max-w-[1280px]">
-        <SectionLabel>Über uns</SectionLabel>
+        <SectionLabel>Der Verein</SectionLabel>
         <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
-          Kompetenz, Raum
+          Seit über 70 Jahren
           <br />
-          und ein <em className="italic text-forest">offenes Tor</em>.
+          <em className="italic text-forest">für Pferd und Reiter</em>.
         </h2>
 
         <div className="mt-10 grid gap-12 text-lg leading-relaxed text-ink-soft lg:grid-cols-2 lg:gap-20">
           <div className="space-y-5">
             <p className="first-letter:float-left first-letter:mr-2 first-letter:font-serif first-letter:text-6xl first-letter:font-light first-letter:leading-none first-letter:text-forest">
-              Wir überzeugen durch Kompetenz in der Haltung von Pferden — und
-              durch die Möglichkeiten, die unsere Anlage bietet. Reithalle,
-              Ebbe-Flut-Platz, Dressurplatz, Führanlage, zwei Longier-Optionen
-              und Solarium auf einem Hof.
+              Der Reiterverein Kronsberg e. V. (RVK) ist seit 70 Jahren im südlichen
+              Teil Hannovers beheimatet — direkt hinter der Stadtgrenze zwischen
+              Hannover und Laatzen, unweit der Hildesheimer Straße, an der idyllischen
+              Leinemasch.
             </p>
             <p>
-              Trotz der Nähe zur Stadt Hannover befinden wir uns mitten in der
-              Natur. Bei einem Ausritt im wunderschönen Gelände direkt am Hof
-              können Reiter und Pferd die Seele baumeln lassen.
+              Zurzeit zählen wir rund 150 Mitglieder aller Altersgruppen und sind
+              fester Bestandteil des Laatzener Vereinslebens. Unsere Mitglieder
+              stammen aus Laatzen und Hannover, aber auch aus Sarstedt und der
+              Region Hildesheim.
             </p>
           </div>
           <div className="space-y-5">
             <p>
-              Durch die Beheimatung des Vereins für Vielseitigkeitsreiterei e.V.
-              auf unserer Anlage bieten sich immer wieder interessante
-              Trainings­möglich­keiten — Dressur, Springen, Geländearbeit Hand in
-              Hand.
+              Bei uns fühlen sich Reiter aller Disziplinen wohl — Springen, Dressur,
+              Freizeitreiten für Anfänger und Fortgeschrittene — sowie der
+              voltigierende Nachwuchs ab sechs Jahren.
             </p>
             <p>
-              Wir legen großen Wert auf die Beschaffenheit der Trainingsplätze
-              und pflegen diese regelmäßig. Beste räumliche Voraussetzungen für
-              Leidenschaft, Erfolg und Lebensfreude.
+              Wir bieten Reit- und Voltigierunterricht auf insgesamt sieben
+              vereinseigenen Schulpferden und Schulponys, sowie die Unterbringung
+              Ihres eigenen Pferdes inklusive Weidedienst. Darüber hinaus bietet
+              der RVK Abzeichenlehrgänge und Lehrgänge externer Trainer an.
             </p>
           </div>
         </div>
 
         <DividerFlourish className="mt-16" />
 
-        <PullQuote attribution="Marc Münkel, Inhaber">
-          Bei uns kennt jedes Pferd seinen Namen, seinen Reiter, seine Box und
-          sein Lieblingseck auf der Weide. Das ist kein Lippenbekenntnis — das
-          ist die Bedingung dafür, dass wir gut arbeiten können.
+        <PullQuote attribution="Vorstand des RVK">
+          Riskieren Sie einen kleinen Blick auf unsere Themen- und Bilderseiten
+          — den Stall, den Unterricht, das bunte Vereinsleben. Sie können auch
+          gerne einfach vorbeikommen und sich umschauen.
         </PullQuote>
       </div>
     </section>

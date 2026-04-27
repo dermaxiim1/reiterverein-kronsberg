@@ -1,34 +1,34 @@
 import {
-  Circle,
-  CircleDot,
+  Coffee,
   Home,
   LandPlot,
-  RotateCw,
+  Leaf,
+  Snowflake,
   Square,
-  Sun,
+  Trees,
 } from "lucide-react";
 
 import { SectionLabel } from "@/components/ui/section-label";
 import { FACILITIES } from "@/lib/facilities";
 
-const ICONS = { Home, LandPlot, Square, RotateCw, Circle, CircleDot, Sun };
+const ICONS = { Home, LandPlot, Square, Coffee, Leaf, Snowflake, Trees };
 
 export function FacilitiesSection() {
   return (
-    <section id="anlagen" className="bg-paper px-6 py-24 lg:px-14 lg:py-32">
+    <section id="reitanlage" className="bg-paper px-6 py-24 lg:px-14 lg:py-32">
       <div className="mx-auto max-w-[1280px]">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div>
-            <SectionLabel>Unsere Anlagen</SectionLabel>
+            <SectionLabel>Die Reitanlage</SectionLabel>
             <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
-              Top Bedingungen.
+              Halle, Plätze
               <br />
-              Viel <em className="italic text-forest">Raum</em>.
+              <em className="italic text-forest">und ein Stübchen</em>.
             </h2>
           </div>
           <p className="max-w-md text-base leading-relaxed text-ink-soft">
-            Sieben spezialisierte Bereiche auf einem Hof — wetterunabhängig
-            trainieren, schonend aufwärmen und nach dem Ritt entspannen.
+            Vereinsanlage mit klassischer Reithalle, großzügigem Außenplatz und
+            einem Aufenthaltsraum, der den Verein im wahrsten Sinne zusammenhält.
           </p>
         </div>
 

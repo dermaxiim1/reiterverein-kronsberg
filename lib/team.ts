@@ -7,21 +7,27 @@ export type TeamMember = {
 
 export const TEAM: TeamMember[] = [
   {
-    id: "marc",
-    name: "Marc Münkel",
-    role: "Inhaber & Betriebsleitung",
-    bio: "Marc führt die Anlage seit über zwei Jahrzehnten. Wer ein Pferd hier einstellt, hat einen direkten Draht — am Telefon, am Boxengitter, oder beim morgendlichen Mistgang.",
+    id: "stephanie",
+    name: "Stephanie Nevado Navarro",
+    role: "1. Vorsitzende",
+    bio: "Stephanie führt den Verein. Bei Fragen rund um Boxen, Mitgliedschaft und Vereinsleben ist sie die erste Anlaufstelle — telefonisch oder im Stallbüro.",
   },
   {
-    id: "team-stall",
-    name: "Stall-Team",
+    id: "bettina",
+    name: "Bettina Lachmann",
+    role: "2. Vorsitzende",
+    bio: "Unterstützt die Vereinsführung im Tagesgeschäft, organisiert Lehrgänge und hat einen Überblick über die kommenden Veranstaltungen.",
+  },
+  {
+    id: "trainer",
+    name: "Trainer & Ausbilder",
+    role: "Reit- und Voltigierunterricht",
+    bio: "Erfahrenes Trainer-Team, qualifiziert für Anfänger bis Fortgeschrittene. Reitstunden Mo–Fr nachmittags und abends, Voltigieren freitags 17–18 Uhr.",
+  },
+  {
+    id: "stallpersonal",
+    name: "Stallpersonal",
     role: "Pflege & Versorgung",
-    bio: "Drei feste Hände, die jeden Morgen vor Sonnenaufgang im Stall stehen — füttern, misten, Pferde rauslassen, Plätze pflegen. Sie kennen jedes Pferd beim Namen.",
-  },
-  {
-    id: "vfv",
-    name: "VfV e.V.",
-    role: "Verein für Vielseitigkeitsreiterei",
-    bio: "Beheimatet auf unserer Anlage. Vorstand und aktive Mitglieder organisieren Lehrgänge, Trainings und Vereinsturniere — offen auch für Einsteller von außerhalb.",
+    bio: "Drei feste Hände, sehr um das Wohl der Pferde besorgt. Füttern dreimal täglich, Heu morgens und abends, Mo–Fr Misten und Einstreuen.",
   },
 ];

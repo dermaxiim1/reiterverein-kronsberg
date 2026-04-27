@@ -4,44 +4,49 @@ export type SiteHourBlock = {
 };
 
 export const SITE = {
-  name: "Reitanlage Münkel",
-  tagline: "Pensionsstall & Vielseitigkeit · Langenhagen",
+  name: "Reiterverein Kronsberg e.V.",
+  shortName: "RVK",
+  tagline: "Reiterverein seit über 70 Jahren · Hannover-Laatzen",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
       : "https://reitanlage-muenkel.vercel.app"),
   description:
-    "Reitanlage Münkel in Langenhagen bei Hannover — Pensionsstall mit Reithalle, Ebbe-Flut-Platz, Dressurplatz, Führanlage und Solarium. Direkter Waldanschluss. Beheimatung des Vereins für Vielseitigkeitsreiterei e.V.",
-  owner: "Marc Münkel",
-  region: "Region Hannover",
+    "Reiterverein Kronsberg e.V. — seit über 70 Jahren in Hannover-Laatzen, direkt an der Leinemasch. Reitunterricht auf vereinseigenen Schulpferden, Voltigieren ab 6 Jahren, 23 Innen- und Außenboxen für Einsteller.",
+  owner: "Stephanie Nevado Navarro · 1. Vorsitzende",
+  region: "Hannover-Laatzen · Leinemasch",
+  founded: "1953",
 
   contact: {
-    phone: "+49 172 4002687",
-    phoneTel: "+491724002687",
-    email: "marc.muenkel@web.de",
+    phone: "0179 6697138",
+    phoneTel: "+491796697138",
+    phoneLabel: "Boxen-Anfragen · Frau Nevado-Navarro",
+    email: "info@reiterverein-kronsberg.de",
+    contactForm: "/kontakt",
   },
 
   address: {
-    street: "Twenge 1",
-    postalCode: "30855",
-    city: "Langenhagen",
+    street: "Hildesheimer Straße 2a",
+    postalCode: "30880",
+    city: "Laatzen",
     region: "Region Hannover",
-    googleMapsQuery: "Twenge+1,+30855+Langenhagen",
-    geo: { lat: 52.4485, lng: 9.7406 }, // Langenhagen approx
+    googleMapsQuery: "Hildesheimer+Stra%C3%9Fe+2a,+30880+Laatzen",
+    geo: { lat: 52.3145, lng: 9.7935 },
+    transit: "Stadtbahn 1/2 — Haltestelle Am Brabrinke",
   },
 
   visitNote: [
-    { dayLabel: "Besichtigung", note: "Nach Vereinbarung" },
-    { dayLabel: "Anlieferung / Abholung", note: "Nach Absprache" },
+    { dayLabel: "Schnupperstunden", note: "Nach Vereinbarung" },
+    { dayLabel: "Boxen-Besichtigung", note: "Telefonisch absprechen" },
   ] satisfies readonly SiteHourBlock[],
 
   nav: [
-    { href: "#ueber-uns", label: "Über uns" },
-    { href: "#anlagen", label: "Anlagen" },
-    { href: "#pferde", label: "Pferde" },
-    { href: "#vielseitigkeit", label: "Vielseitigkeit" },
-    { href: "#veranstaltungen", label: "Termine" },
-    { href: "#kontakt", label: "Kontakt" },
+    { href: "#verein", label: "Der Verein" },
+    { href: "#reitanlage", label: "Reitanlage" },
+    { href: "#schulpferde", label: "Schulpferde" },
+    { href: "#unterricht", label: "Unterricht" },
+    { href: "#mitgliedschaft", label: "Mitgliedschaft" },
+    { href: "#anfahrt", label: "Anfahrt" },
   ] as const,
 } as const;

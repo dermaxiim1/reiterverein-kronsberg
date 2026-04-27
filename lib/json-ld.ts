@@ -2,12 +2,14 @@ import { SITE } from "./site";
 
 export const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "SportsActivityLocation"],
+  "@type": ["SportsClub", "SportsActivityLocation", "LocalBusiness"],
   name: SITE.name,
+  alternateName: SITE.shortName,
   description: SITE.description,
   url: SITE.url,
   telephone: SITE.contact.phone,
   email: SITE.contact.email,
+  foundingDate: SITE.founded,
   address: {
     "@type": "PostalAddress",
     streetAddress: SITE.address.street,
@@ -21,20 +23,17 @@ export const localBusinessJsonLd = {
     latitude: SITE.address.geo.lat,
     longitude: SITE.address.geo.lng,
   },
-  sport: ["Eventing", "Dressage", "Show Jumping"],
+  sport: ["Equestrian", "Dressage", "Show Jumping", "Vaulting"],
   amenityFeature: [
-    { "@type": "LocationFeatureSpecification", name: "Reithalle 20×40 m" },
-    { "@type": "LocationFeatureSpecification", name: "Ebbe-Flut-Platz 90×60 m" },
-    { "@type": "LocationFeatureSpecification", name: "Dressurplatz 20×60 m" },
-    { "@type": "LocationFeatureSpecification", name: "Führanlage" },
-    { "@type": "LocationFeatureSpecification", name: "Longierzirkel" },
-    { "@type": "LocationFeatureSpecification", name: "Longierhalle" },
-    { "@type": "LocationFeatureSpecification", name: "Pferdesolarium" },
+    { "@type": "LocationFeatureSpecification", name: "Reithalle 43 × 20 m" },
+    { "@type": "LocationFeatureSpecification", name: "Außenreitplatz 60 × 30 m" },
+    { "@type": "LocationFeatureSpecification", name: "Reiterstübchen / Aufenthaltsraum" },
+    { "@type": "LocationFeatureSpecification", name: "23 Innen- und Außenboxen" },
+    { "@type": "LocationFeatureSpecification", name: "Sommer- und Winterweiden + Paddocks" },
+    { "@type": "LocationFeatureSpecification", name: "Direkter Zugang zur Leinemasch" },
   ],
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      description: "Besichtigung nach Vereinbarung",
-    },
+  member: [
+    { "@type": "Person", name: "Stephanie Nevado Navarro", jobTitle: "1. Vorsitzende" },
+    { "@type": "Person", name: "Bettina Lachmann", jobTitle: "2. Vorsitzende" },
   ],
 } as const;

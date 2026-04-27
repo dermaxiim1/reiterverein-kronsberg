@@ -6,41 +6,47 @@ export type EquineEvent = {
   badge?: string;
 };
 
-// Typische Veranstaltungen — Marc liefert echte Termine, dann nach Jahr/Monat sortieren.
 export const EVENTS: EquineEvent[] = [
   {
-    id: "vfv-dressurlehrgang",
-    title: "VfV Dressurlehrgang",
-    cadence: "Frühjahr & Herbst",
-    desc: "Zweitägiger Lehrgang mit erfahrenem Trainer, offen für Mitglieder und Gastreiter. Anfänger bis M-Niveau, kleine Gruppen.",
+    id: "sommerfest",
+    title: "Sommerfest",
+    cadence: "Mitte August",
+    desc: "Jahres-Highlight für Mitglieder, Familien und Freunde. Zuletzt am 17.08.2024 — Buffet, Spiele, geselliges Beisammensein im Reiterstübchen.",
+    badge: "Vereinsfest",
+  },
+  {
+    id: "abzeichenlehrgang",
+    title: "Abzeichenlehrgänge",
+    cadence: "Mehrmals im Jahr",
+    desc: "Vorbereitung und Prüfung von Reitabzeichen. Strukturierte Module für Anfänger und Fortgeschrittene.",
     badge: "Lehrgang",
   },
   {
-    id: "gelaende-tag",
-    title: "Gelände- und Cross-Tag",
-    cadence: "Mai & September",
-    desc: "Ausritte mit Geländesprüngen im angrenzenden Wald. Vorbereitung für die Vielseitigkeitsturniere des VfV e.V.",
-    badge: "Vereinstag",
-  },
-  {
-    id: "spring-clinic",
-    title: "Spring-Clinic",
-    cadence: "Sommer",
-    desc: "Drei-Tages-Clinic auf dem Ebbe-Flut-Platz. Stangen, Reihen, Linienführung — bis hinauf zu M-Parcours.",
+    id: "externe-trainer",
+    title: "Lehrgänge externer Trainer",
+    cadence: "Nach Aushang",
+    desc: "Gastreiter-Lehrgänge mit Trainern von außerhalb — Dressur, Springen, Vielseitigkeit.",
     badge: "Lehrgang",
   },
   {
-    id: "stallfest",
-    title: "Stallfest",
-    cadence: "Spätsommer",
-    desc: "Jahres-Highlight für Einsteller, Familie und Freunde. Hofführung, kleines Buffet, am Abend Lagerfeuer.",
-    badge: "Fest",
+    id: "voltigieren",
+    title: "Voltigieren · wöchentlich",
+    cadence: "Freitags 17–18 Uhr",
+    desc: "Spielerischer Einstieg in den Reitsport für Kinder ab 6 Jahren. Grundsitz, Fahne und Stütz mit unseren Voltipferden.",
+    badge: "Wöchentlich",
   },
   {
-    id: "winter-treffen",
-    title: "Winter-Stammtisch",
-    cadence: "Jeden zweiten Freitag",
-    desc: "Locker zusammenkommen, planen, fachsimpeln. Von November bis März im warmen Aufenthaltsraum.",
-    badge: "Stammtisch",
+    id: "weihnachtsquadrille",
+    title: "Weihnachtsquadrille",
+    cadence: "Dezember",
+    desc: "Traditioneller Auftritt der Reitschüler in der weihnachtlich geschmückten Halle — choreographiert und einstudiert.",
+    badge: "Tradition",
+  },
+  {
+    id: "schnupperstunde",
+    title: "Schnupperstunde",
+    cadence: "Jederzeit nach Vereinbarung",
+    desc: "Erste Reitstunde, Voltigieren ausprobieren, oder beim Unterricht zuschauen — schreiben Sie uns einfach eine E-Mail.",
+    badge: "Einstieg",
   },
 ];

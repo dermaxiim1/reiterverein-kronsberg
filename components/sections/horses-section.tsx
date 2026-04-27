@@ -6,23 +6,23 @@ import { HORSES } from "@/lib/horses";
 export function HorsesSection() {
   return (
     <section
-      id="pferde"
+      id="schulpferde"
       className="bg-paper-dark px-6 py-24 lg:px-14 lg:py-32"
     >
       <div className="mx-auto max-w-[1280px]">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div>
-            <SectionLabel>Stall­bewohner</SectionLabel>
+            <SectionLabel>Unsere Schulpferde</SectionLabel>
             <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
-              Wer hier
+              Vereinseigen.
               <br />
-              <em className="italic text-forest">zuhause</em> ist.
+              <em className="italic text-forest">Lehrer auf vier Beinen</em>.
             </h2>
           </div>
           <p className="max-w-md text-base leading-relaxed text-ink-soft">
-            Eine Auswahl unserer Stamm-Pferde — Hannoveraner, Holsteiner,
-            Trakehner. Jedes hat seinen Platz, seinen Reiter und seine eigene
-            Geschichte.
+            Vom Volti-Pony bis zum Hannoveraner Wallach — sieben vereinseigene
+            Schulpferde und Ponys, die jeden Tag im Reit- und Voltiunterricht im
+            Einsatz sind.
           </p>
         </div>
 
@@ -52,7 +52,8 @@ export function HorsesSection() {
               </div>
               <div className="p-6">
                 <p className="text-xs uppercase tracking-[0.14em] text-saddle">
-                  {h.breed} · {h.age} Jahre
+                  {h.breed}
+                  {h.age ? ` · ${h.age}` : ""}
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-ink-soft">
                   {h.story}

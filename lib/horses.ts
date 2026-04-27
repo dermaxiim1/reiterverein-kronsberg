@@ -2,72 +2,70 @@ export type Horse = {
   id: string;
   name: string;
   breed: string;
-  age: number;
+  age?: string;
   discipline: string;
   story: string;
   image: string;
 };
 
-// Repräsentative Stallbewohner — Daten austauschen sobald Marc echte Profile liefert.
+// Echte RVK-Schulpferde (Stand Vereinsseite).
 export const HORSES: Horse[] = [
   {
-    id: "lou",
-    name: "Lou",
-    breed: "Hannoveraner Wallach",
-    age: 14,
-    discipline: "Vielseitigkeit · M-Niveau",
+    id: "q7",
+    name: "Q7",
+    breed: "Hannoveraner Fuchswallach",
+    age: "12 Jahre · über 170 cm",
+    discipline: "Schulbetrieb · Volti-Hoffnung",
     story:
-      "Lou kennt jeden Stein im angrenzenden Wald. Mit ihm fängt jeder Geländetag früh an und endet auf der Weide hinter der Halle.",
+      "Q7 gehört zu den Größten in unserer Schulpferderiege. Frisch zum Jahresstart bei uns — wir wünschen ihm und uns viele schöne gemeinsame Momente.",
     image: "/images/horses/lou.jpg",
   },
   {
-    id: "cara",
-    name: "Cara",
-    breed: "Hannoveraner Stute",
-    age: 11,
-    discipline: "Dressur · Klasse L",
+    id: "inka",
+    name: "Inka",
+    breed: "Stute",
+    age: "8 Jahre",
+    discipline: "Schul- & Voltipferd",
     story:
-      "Cara liebt das Outdoor-Viereck im Frühjahr. Wer sie longieren will, braucht eine Tasse Kaffee — sie nimmt sich Zeit.",
+      "Seit knapp drei Jahren im Schulbetrieb. Wächst in ihre Rolle als Voltipferd hinein — ruhig, gelassen, mit dem nötigen Dickkopf.",
     image: "/images/horses/cara.jpg",
   },
   {
-    id: "wotan",
-    name: "Wotan",
-    breed: "Holsteiner Wallach",
-    age: 9,
-    discipline: "Springen · M*",
+    id: "nevado",
+    name: "Nevado",
+    breed: "Appaloosa",
+    age: "geboren 2013 in Italien",
+    discipline: "Fortgeschrittene · Longe",
     story:
-      "Wotan kam als Vierjähriger zu uns. Heute fliegt er Parcours bis 1,30 m — ohne mit der Wimper zu zucken.",
+      "Hat im Verein ein neues Zuhause gefunden. Wird besonders mit fortgeschrittenen Reitern und an der Longe eingesetzt.",
     image: "/images/horses/wotan.jpg",
   },
   {
-    id: "diva",
-    name: "Diva",
-    breed: "Westfälische Stute",
-    age: 8,
-    discipline: "Dressur · Klasse A",
+    id: "polly",
+    name: "Polly",
+    breed: "Schulpony",
+    discipline: "Reit- & Voltistunden",
     story:
-      "Diva ist die Sonne im Stall. Wenn die anderen unruhig sind, bleibt sie ruhig. Marcs Lieblings-Schülerinnen­pferd.",
+      "Bringt Erfahrung mit kleineren und jüngeren Reitschüler:innen mit. Hat in Pebbles eine gute Schulpony-Freundin gefunden — geduldig auch in den Voltistunden.",
     image: "/images/horses/diva.jpg",
   },
   {
-    id: "falke",
-    name: "Falke",
-    breed: "Trakehner Wallach",
-    age: 16,
-    discipline: "Gelände · Lehrpferd",
+    id: "pebbles",
+    name: "Pebbles",
+    breed: "Pony",
+    discipline: "Reitstunden Anfänger",
     story:
-      "Falke ist unser ältester Schatz. Er hat hier mehr Anfänger ins Sattel gesetzt als jeder andere — und immer mit Würde.",
+      "Fleißiges Pony in Schritt und Trab — möchte alles richtig machen. Bequeme Gangarten und freundliches Wesen, beliebt bei Klein und Groß.",
     image: "/images/horses/falke.jpg",
   },
   {
-    id: "lara",
-    name: "Lara",
-    breed: "Hannoveraner Stute",
-    age: 7,
-    discipline: "Dressur · A nach M",
+    id: "bramble",
+    name: "Bramble",
+    breed: "Welsh-Cob",
+    age: "4 Jahre",
+    discipline: "Nachwuchs · in Ausbildung",
     story:
-      "Junge Stute mit großem Versprechen. Wer Lara nach dem Reiten in den Stall bringt, kommt nie ohne Möhre zurück.",
+      "Als 3,5-Jähriger zu uns gekommen. Im Umgang ein Schatz, besonnen und freundlich. Lernt jetzt langsam die Atmosphäre des Schulpferdeunterrichts kennen.",
     image: "/images/horses/lara.jpg",
   },
 ];

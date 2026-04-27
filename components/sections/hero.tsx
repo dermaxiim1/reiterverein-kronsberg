@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative min-h-screen overflow-hidden bg-ink">
       <Image
         src="/images/hero/anlage.jpg"
-        alt="Reitanlage Münkel — Reithalle in Vielseitigkeit"
+        alt="Reiterverein Kronsberg — Reithalle 43 × 20 m"
         fill
         priority
         sizes="100vw"
@@ -27,17 +27,17 @@ export function Hero() {
         </div>
 
         <h1 className="font-serif text-[clamp(48px,8vw,120px)] font-light leading-[0.95] tracking-[-0.03em] text-cream">
-          Pensionsstall für
+          Reitunterricht,
           <br />
-          <em className="italic text-hay">Vielseitigkeitsreiter</em>
+          <em className="italic text-hay">Voltigieren</em> und Boxen
           <br />
-          vor den Toren Hannovers.
+          seit über 70 Jahren.
         </h1>
 
         <p className="mt-9 max-w-2xl text-lg leading-relaxed text-cream/85 md:text-xl">
-          Reithalle, Ebbe-Flut-Platz, Dressurplatz, Führanlage, Longierzirkel,
-          Longierhalle und Pferdesolarium — auf einem Hof, mit direktem Wald­anschluss
-          und Beheimatung des VfV e.V.
+          Der Reiterverein Kronsberg e.V. — südlich von Hannover, direkt an der
+          Leinemasch. Reitstunden auf vereinseigenen Schulpferden, Voltigieren ab
+          sechs Jahren und 23 Boxen für Einsteller.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -51,24 +51,24 @@ export function Hero() {
             href={`mailto:${SITE.contact.email}`}
             className="inline-flex items-center gap-2 rounded-full border border-cream/40 px-7 py-4 text-sm font-medium tracking-wider text-cream transition-all hover:-translate-y-0.5 hover:bg-cream/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream"
           >
-            E-Mail schreiben
+            Schnupperstunde anfragen
           </a>
         </div>
 
         <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-xs uppercase tracking-[0.16em] text-cream/70">
-          <span>7 Anlagen</span>
+          <span>~150 Mitglieder</span>
           <span aria-hidden className="opacity-50">·</span>
-          <span>Direkter Wald­anschluss</span>
+          <span>7 Schulpferde &amp; Ponys</span>
           <span aria-hidden className="opacity-50">·</span>
-          <span>Beheimatung VfV e.V.</span>
+          <span>Halle 43 × 20 m</span>
           <span aria-hidden className="opacity-50">·</span>
-          <span>{SITE.address.street}, {SITE.address.city}</span>
+          <span>Direkt an der Leinemasch</span>
         </div>
       </div>
 
       <StampBadge
-        big="Münkel"
-        small="Pensionsstall · Hannover"
+        big="RVK"
+        small={`Reiterverein · seit ${SITE.founded}`}
         className="absolute right-6 top-28 z-10 size-32 rotate-[8deg] md:right-14 md:top-32 md:size-36"
       />
     </section>

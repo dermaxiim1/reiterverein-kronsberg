@@ -1,12 +1,5 @@
 export type Facility = {
-  id:
-    | "reithalle"
-    | "ebbe-flut-platz"
-    | "dressurplatz"
-    | "fuehranlage"
-    | "longierzirkel"
-    | "longierhalle"
-    | "solarium";
+  id: string;
   name: string;
   dimensions?: string;
   capacity?: string;
@@ -18,54 +11,53 @@ export const FACILITIES: Facility[] = [
   {
     id: "reithalle",
     name: "Reithalle",
-    dimensions: "20 × 40 m",
+    dimensions: "43 × 20 m",
     blurb:
-      "Beheizte Reithalle mit gepflegtem Boden — wetterunabhängig trainieren, das ganze Jahr.",
+      "Direkt über die Stallgasse erreichbar. Viel Licht, eigene Bewässerungsanlage. Schul- und Voltigierbetrieb sowie Dressur- und Springunterricht.",
     icon: "Home",
   },
   {
-    id: "ebbe-flut-platz",
-    name: "Ebbe-Flut-Platz",
-    dimensions: "90 × 60 m",
+    id: "aussenplatz",
+    name: "Außenreitplatz",
+    dimensions: "60 × 30 m",
     blurb:
-      "Großzügiger All-Wetter-Platz mit hydraulischer Drainage. Springen, Dressur, Galopp — auch nach Regen sofort bereit.",
+      "Großzügig direkt neben der Halle. Festes Dressurviereck und verschiedene Hindernisse — ideal zur Vorbereitung auf Prüfung oder Parcours.",
     icon: "LandPlot",
   },
   {
-    id: "dressurplatz",
-    name: "Dressurplatz",
-    dimensions: "20 × 60 m",
+    id: "reiterstuebchen",
+    name: "Reiterstübchen",
     blurb:
-      "Outdoor-Dressurviereck in Turniermaßen. Optimaler Boden für Lektionsarbeit und Vorbereitung.",
+      "Großzügiger Aufenthaltsraum im oberen Stockwerk. Überblick über Halle und Außenplatz, gemütlich für Beisammensein, Klönen, Vereinsabende.",
+    icon: "Coffee",
+  },
+  {
+    id: "stallungen",
+    name: "Stallungen",
+    capacity: "23 + 4 Boxen",
+    blurb:
+      "23 Innen- und Außenboxen für Einsteller, 8–16 m² groß, luftig. Plus 4 Boxen für die vereinseigenen Schulpferde.",
     icon: "Square",
   },
   {
-    id: "fuehranlage",
-    name: "Führanlage",
-    capacity: "8 Plätze",
+    id: "weiden",
+    name: "Sommerweiden",
     blurb:
-      "Pferdegerechtes Aufwärmen und Lockern. Schonend für die Sehnen — täglich nutzbar.",
-    icon: "RotateCw",
+      "Werktags morgens raus, mittags rein. Harmonische Gruppen, gepflegte Flächen. Fester Weideplatz von Frühjahr bis Herbst möglich.",
+    icon: "Leaf",
   },
   {
-    id: "longierzirkel",
-    name: "Longierzirkel",
+    id: "paddock",
+    name: "Winterweiden & Paddocks",
     blurb:
-      "Geschützter Außenzirkel für gleichmäßiges Longieren und Bodenarbeit.",
-    icon: "Circle",
+      "Werktags Paddock, je nach Wetterlage zusätzlich Winterweide. Tägliche Bewegung das ganze Jahr.",
+    icon: "Snowflake",
   },
   {
-    id: "longierhalle",
-    name: "Longierhalle",
+    id: "leinemasch",
+    name: "Leinemasch direkt vor der Tür",
     blurb:
-      "Überdacht longieren — auch bei Regen, Schnee und Hitze. Ideal für junge Pferde.",
-    icon: "CircleDot",
-  },
-  {
-    id: "solarium",
-    name: "Pferdesolarium",
-    blurb:
-      "Wärme nach dem Training oder im Winter. Unterstützt Muskulatur und Wohlbefinden.",
-    icon: "Sun",
+      "Naturschutzgebiet direkt am Außenplatz. Lange Ausritte ohne Asphalt, jederzeit aus dem Stall.",
+    icon: "Trees",
   },
 ];
