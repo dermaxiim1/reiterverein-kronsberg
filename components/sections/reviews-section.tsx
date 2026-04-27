@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { REVIEWS } from "@/lib/reviews";
 
@@ -6,11 +7,11 @@ export function ReviewsSection() {
     <section className="bg-paper-dark px-6 py-24 lg:px-14 lg:py-32">
       <div className="mx-auto max-w-[1280px]">
         <SectionLabel>Was Einsteller sagen</SectionLabel>
-        <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+        <SectionHeading>
           Stimmen vom
           <br />
           <em className="italic text-forest">Stallgang</em>.
-        </h2>
+        </SectionHeading>
 
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">
           {REVIEWS.map((r, i) => (

@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { SITE } from "@/lib/site";
 
@@ -6,11 +7,11 @@ export function ContactSection() {
     <section id="anfahrt" className="bg-paper-dark px-6 py-24 lg:px-14 lg:py-32">
       <div className="mx-auto max-w-[1280px]">
         <SectionLabel>Anfahrt & Kontakt</SectionLabel>
-        <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+        <SectionHeading>
           So finden
           <br />
           <em className="italic text-forest">Sie zu uns</em>.
-        </h2>
+        </SectionHeading>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-3 lg:gap-12">
           {/* Adresse + Anfahrt */}

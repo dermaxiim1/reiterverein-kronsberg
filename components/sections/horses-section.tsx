@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { HORSES } from "@/lib/horses";
 
@@ -13,11 +14,11 @@ export function HorsesSection() {
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div>
             <SectionLabel>Unsere Schulpferde</SectionLabel>
-            <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+            <SectionHeading>
               Vereinseigen.
               <br />
               <em className="italic text-forest">Lehrer auf vier Beinen</em>.
-            </h2>
+            </SectionHeading>
           </div>
           <p className="max-w-md text-base leading-relaxed text-ink-soft">
             Vom Volti-Pony bis zum Hannoveraner Wallach — sieben vereinseigene

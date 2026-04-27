@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { SITE } from "@/lib/site";
 
@@ -27,11 +28,11 @@ export function VielseitigkeitSection() {
     >
       <div className="mx-auto max-w-[1280px]">
         <SectionLabel className="text-cream/85">Unterricht</SectionLabel>
-        <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em] text-cream">
+        <SectionHeading light>
           Anfänger oder
           <br />
           <em className="italic text-hay">Routinier</em>.
-        </h2>
+        </SectionHeading>
 
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-cream/85">
           Dem RVK liegt die <strong className="font-medium">Basisausbildung</strong> besonders

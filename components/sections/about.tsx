@@ -1,5 +1,6 @@
 import { DividerFlourish } from "@/components/ui/divider-flourish";
 import { PullQuote } from "@/components/ui/pull-quote";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 
 export function About() {
@@ -10,11 +11,11 @@ export function About() {
     >
       <div className="mx-auto max-w-[1280px]">
         <SectionLabel>Der Verein</SectionLabel>
-        <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+        <SectionHeading>
           Seit über 70 Jahren
           <br />
           <em className="italic text-forest">für Pferd und Reiter</em>.
-        </h2>
+        </SectionHeading>
 
         <div className="mt-10 grid gap-12 text-lg leading-relaxed text-ink-soft lg:grid-cols-2 lg:gap-20">
           <div className="space-y-5">

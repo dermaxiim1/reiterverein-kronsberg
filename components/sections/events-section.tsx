@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { EVENTS } from "@/lib/events";
 
@@ -9,11 +10,11 @@ export function EventsSection() {
     >
       <div className="mx-auto max-w-[1280px]">
         <SectionLabel>Veranstaltungen</SectionLabel>
-        <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+        <SectionHeading>
           Im Kalender
           <br />
           <em className="italic text-forest">eines Jahres</em>.
-        </h2>
+        </SectionHeading>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-soft">
           Lehrgänge, Vereinstage und Stallfeste — offen für Mitglieder,
           Einsteller und Gäste. Termine erfragen Sie bitte direkt.

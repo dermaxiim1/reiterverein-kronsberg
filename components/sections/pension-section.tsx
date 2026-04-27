@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { SITE } from "@/lib/site";
 
@@ -35,11 +36,11 @@ export function PensionSection() {
     <section id="stallungen" className="bg-paper-dark px-6 py-24 lg:px-14 lg:py-32">
       <div className="mx-auto max-w-[1280px]">
         <SectionLabel>Stallungen & Weiden</SectionLabel>
-        <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+        <SectionHeading>
           Was eine
           <br />
           <em className="italic text-forest">Box bei uns</em> enthält.
-        </h2>
+        </SectionHeading>
 
         <div className="mt-12 grid grid-cols-1 gap-x-16 gap-y-8 md:grid-cols-2">
           {STALL_FEATURES.map((item) => (

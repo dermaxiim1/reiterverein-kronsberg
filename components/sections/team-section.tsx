@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { TEAM } from "@/lib/team";
 
@@ -6,11 +7,11 @@ export function TeamSection() {
     <section className="bg-paper px-6 py-24 lg:px-14 lg:py-32">
       <div className="mx-auto max-w-[1280px]">
         <SectionLabel>Das Team</SectionLabel>
-        <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+        <SectionHeading>
           Persönlich.
           <br />
           <em className="italic text-forest">Im besten Sinne.</em>
-        </h2>
+        </SectionHeading>
 
         <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
           {TEAM.map((m, i) => (

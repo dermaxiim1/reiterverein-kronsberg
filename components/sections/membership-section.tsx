@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { PRICE_GROUPS } from "@/lib/membership";
 import { SITE } from "@/lib/site";
@@ -10,11 +11,11 @@ export function MembershipSection() {
     >
       <div className="mx-auto max-w-[1280px]">
         <SectionLabel>Mitgliedschaft & Preise</SectionLabel>
-        <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+        <SectionHeading>
           Klar geregelt,
           <br />
           <em className="italic text-forest">familiär gelebt</em>.
-        </h2>
+        </SectionHeading>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-soft">
           Sie möchten dem RVK beitreten? Hier finden Sie unsere aktuellen
           Beiträge im Überblick. Die Aufnahmegebühr wird sofort, der Jahresbeitrag

@@ -8,6 +8,7 @@ import {
   Trees,
 } from "lucide-react";
 
+import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { FACILITIES } from "@/lib/facilities";
 
@@ -20,11 +21,11 @@ export function FacilitiesSection() {
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div>
             <SectionLabel>Die Reitanlage</SectionLabel>
-            <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
+            <SectionHeading>
               Halle, Plätze
               <br />
               <em className="italic text-forest">und ein Stübchen</em>.
-            </h2>
+            </SectionHeading>
           </div>
           <p className="max-w-md text-base leading-relaxed text-ink-soft">
             Vereinsanlage mit klassischer Reithalle, großzügigem Außenplatz und
